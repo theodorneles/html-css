@@ -1,13 +1,24 @@
 @charset "'UTF-8'";
 
-* {
-   margin: 0px;
-   padding: 0px;
-}
 
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+ :root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Caveat', cursive;
+    --fonte3: 'Rowdies', cursive;
+
+ }
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header {
     background-color: black;
@@ -17,6 +28,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte3);
+    font-size: 7vw;
 }
 header > p {
     padding-bottom: 50px;
@@ -34,6 +47,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -45,7 +60,8 @@ section.imagem {
     color: white;
 }
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.219);
 }
 footer {
