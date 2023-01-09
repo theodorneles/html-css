@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -19,11 +20,25 @@
             padding: 10px;
         }
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(17, 17, 17);
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -2px;
+            background-color: rgb(17, 17, 17);
         }
         td.num {
             text-align: right;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -31,6 +46,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia para tabelas grandes
     TABLE
+    CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -39,10 +55,11 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -157,10 +174,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora laboriosam perferendis sit ab error numquam reprehenderit explicabo unde magni nihil ad cumque facilis esse, sint dolorem aliquid ipsa quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo placeat dolore aspernatur fugit dignissimos debitis, commodi sunt accusamus fuga officiis nostrum molestiae ratione quam, optio porro sint nobis voluptate quidem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ex sed fuga distinctio saepe neque, maiores deleniti dolore libero, non voluptate nihil eius sit delectus magni eum. Recusandae, atque magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus voluptate, ut libero repellendus voluptas tenetur quis iure similique deserunt molestias nihil tempora corrupti dolor animi! Sequi odit tenetur quasi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora laboriosam perferendis sit ab error numquam reprehenderit explicabo unde magni nihil ad cumque facilis esse, sint dolorem aliquid ipsa quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo placeat dolore aspernatur fugit dignissimos debitis, commodi sunt accusamus fuga officiis nostrum molestiae ratione quam, optio porro sint nobis voluptate quidem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ex sed fuga distinctio saepe neque, maiores deleniti dolore libero, non voluptate nihil eius sit delectus magni eum. Recusandae, atque magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus voluptate, ut libero repellendus voluptas tenetur quis iure similique deserunt molestias nihil tempora corrupti dolor animi! Sequi odit tenetur quasi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora laboriosam perferendis sit ab error numquam reprehenderit explicabo unde magni nihil ad cumque facilis esse, sint dolorem aliquid ipsa quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo placeat dolore aspernatur fugit dignissimos debitis, commodi sunt accusamus fuga officiis nostrum molestiae ratione quam, optio porro sint nobis voluptate quidem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ex sed fuga distinctio saepe neque, maiores deleniti dolore libero, non voluptate nihil eius sit delectus magni eum. Recusandae, atque magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus voluptate, ut libero repellendus voluptas tenetur quis iure similique deserunt molestias nihil tempora corrupti dolor animi! Sequi odit tenetur quasi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora laboriosam perferendis sit ab error numquam reprehenderit explicabo unde magni nihil ad cumque facilis esse, sint dolorem aliquid ipsa quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo placeat dolore aspernatur fugit dignissimos debitis, commodi sunt accusamus fuga officiis nostrum molestiae ratione quam, optio porro sint nobis voluptate quidem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ex sed fuga distinctio saepe neque, maiores deleniti dolore libero, non voluptate nihil eius sit delectus magni eum. Recusandae, atque magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus voluptate, ut libero repellendus voluptas tenetur quis iure similique deserunt molestias nihil tempora corrupti dolor animi! Sequi odit tenetur quasi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora laboriosam perferendis sit ab error numquam reprehenderit explicabo unde magni nihil ad cumque facilis esse, sint dolorem aliquid ipsa quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo placeat dolore aspernatur fugit dignissimos debitis, commodi sunt accusamus fuga officiis nostrum molestiae ratione quam, optio porro sint nobis voluptate quidem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ex sed fuga distinctio saepe neque, maiores deleniti dolore libero, non voluptate nihil eius sit delectus magni eum. Recusandae, atque magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus voluptate, ut libero repellendus voluptas tenetur quis iure similique deserunt molestias nihil tempora corrupti dolor animi! Sequi odit tenetur quasi.</p>
 </body>
 </html>
